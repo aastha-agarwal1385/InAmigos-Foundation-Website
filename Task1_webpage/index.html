@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InAmigos Foundation - Uniting Minds for Change</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="images/logo.png" alt="InAmigos Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1>InAmigos</h1>
+                    <p>Uniting Minds for Change</p>
+                </div>
+            </div>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#internships">Internships</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Full Background -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-gradient"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in">
+            <h2>Creating Impact Through Action</h2>
+            <p class="hero-subtitle">Transforming communities across India through education, environment, women empowerment, animal welfare, and youth development</p>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="stat-value" data-count="20000">20k+</div>
+                    <span class="stat-text">Trees Planted</span>
+                </div>
+                <div class="hero-stat">
+                    <div class="stat-value" data-count="50000">50k+</div>
+                    <span class="stat-text">Meals Served</span>
+                </div>
+                <div class="hero-stat">
+                    <div class="stat-value" data-count="900000">90k+</div>
+                    <span class="stat-text">Interns Engaged</span>
+                </div>
+            </div>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('contact')">Join Our Mission</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('projects')">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about slide-in">
+        <div class="section-container">
+            <h2>About InAmigos Foundation</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>InAmigos Foundation is a Central Government-licensed NGO registered under Section 8 of the Companies Act 2013, based in Bilaspur, Chhattisgarh. Founded on September 23, 2020, we are dedicated to creating positive social change through impactful initiatives.</p>
+                    <p><strong>Our Goal:</strong> Uniting Minds for Change - we believe that collective action can transform communities and create a better future for all.</p>
+                </div>
+                <div class="credentials">
+                    <div class="credential-item">
+                        <strong>✓ 80G & 12A Certified</strong>
+                        <p>Approved by Income Tax Commissioner</p>
+                    </div>
+                    <div class="credential-item">
+                        <strong>✓ NGO DARPAN Registered</strong>
+                        <p>Registered with NITI Aayog</p>
+                    </div>
+                    <div class="credential-item">
+                        <strong>✓ ISO 9001:2015 Certified</strong>
+                        <p>International Accreditation Forum</p>
+                    </div>
+                    <div class="credential-item">
+                        <strong>✓ CSR-1 Registered</strong>
+                        <p>Corporate Social Responsibility</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="achievements-section">
+                <h3>Our Achievements</h3>
+                <div class="achievements-grid">
+                    <div class="achievement-badge">
+                        <div class="badge-icon">⭐</div>
+                        <div class="badge-text">Top 5 Best NGOs 2025</div>
+                    </div>
+                    <div class="achievement-badge">
+                        <div class="badge-icon">🏆</div>
+                        <div class="badge-text">SPJIMR SICA Finalist 2025</div>
+                    </div>
+                    <div class="achievement-badge">
+                        <div class="badge-icon">👔</div>
+                        <div class="badge-text">Founder Award - Rajya Sabha</div>
+                    </div>
+                    <div class="achievement-badge">
+                        <div class="badge-icon">💼</div>
+                        <div class="badge-text">Top Employer on Internshala</div>
+                    </div>
+                    <div class="achievement-badge">
+                        <div class="badge-icon">👥</div>
+                        <div class="badge-text">1L+ Interns Onboarded</div>
+                    </div>
+                    <div class="achievement-badge">
+                        <div class="badge-icon">📊</div>
+                        <div class="badge-text">5+ Years Partnership</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects slide-in">
+        <div class="section-container">
+            <h2>Our 6 Impactful Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" onclick="showProjectModal('seva')">
+                    <div class="project-image">
+                        <img src="images/seva1.png" alt="Seva Project">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Seva</h3>
+                        <p class="project-description">Helping those in need with food, clothes, and essentials</p>
+                        <div class="project-stat">Distributed 50,000+ Meals</div>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="showProjectModal('bachpanshala')">
+                    <div class="project-image">
+                        <img src="images/bachpanshala.png" alt="Bachpanshala">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Bachpanshala</h3>
+                        <p class="project-description">Providing education and care to underprivileged children</p>
+                        <div class="project-stat">Educating Children in Rural Areas</div>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="showProjectModal('jeev')">
+                    <div class="project-image">
+                        <img src="images/jeev1.png" alt="Jeev Project">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Jeev</h3>
+                        <p class="project-description">Supporting and rescuing animals</p>
+                        <div class="project-stat">Feeding 50+ Animals Daily</div>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="showProjectModal('udaan')">
+                    <div class="project-image">
+                        <img src="images/udaan.png" alt="Udaan Project">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Udaan</h3>
+                        <p class="project-description">Empowering women with skills and opportunities</p>
+                        <div class="project-stat">Empowered 900+ Girls</div>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="showProjectModal('prakriti')">
+                    <div class="project-image">
+                        <img src="images/prakriti.png" alt="Prakriti Project">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Prakriti</h3>
+                        <p class="project-description">Protecting the environment through clean-up drives and plantation</p>
+                        <div class="project-stat">20,000+ Trees Planted</div>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="showProjectModal('vikas')">
+                    <div class="project-image">
+                        <img src="images/vikas.png" alt="Vikas Project">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Vikas</h3>
+                        <p class="project-description">Helping youth grow through internships and skill-building</p>
+                        <div class="project-stat">Empowering Young Professionals</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="impact slide-in">
+        <div class="section-container">
+            <h2>Our Impact Across Communities</h2>
+            <div class="impact-stats">
+                <div class="stat-card">
+                    <div class="stat-number" data-count="45">45+</div>
+                    <div class="stat-label">Countries Reached</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="100000">90k+</div>
+                    <div class="stat-label">Lives Impacted</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="10000">10k+</div>
+                    <div class="stat-label">Active Volunteers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-count="6">6</div>
+                    <div class="stat-label">Projects Running</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery slide-in">
+        <div class="section-container">
+            <h2>Glimpse of Our Work</h2>
+            <div class="gallery-slider">
+                <div class="gallery-slide fade active">
+                    <img src="images/glimse2.png" alt="Gallery 1">
+                </div>
+                <div class="gallery-slide fade">
+                    <img src="images/gallery/gallery2.png" alt="Gallery 2">
+                </div>
+                <div class="gallery-slide fade">
+                    <img src="images/gallery/gallery3.png" alt="Gallery 3">
+                </div>
+            </div>
+            <div class="gallery-controls">
+                <button class="gallery-nav prev" onclick="changeGallerySlide(-1)">&#10094;</button>
+                <div class="gallery-dots">
+                    <span class="dot active" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+                <button class="gallery-nav next" onclick="changeGallerySlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section id="internships" class="internships slide-in">
+        <div class="section-container">
+            <h2>Join as an Intern or Volunteer</h2>
+            <div class="internship-grid">
+                <div class="internship-card">
+                    <div class="internship-role">🤝 Community Manager</div>
+                    <p class="internship-duration">1-3 months</p>
+                    <p>Build and engage communities, coordinate events, manage social presence</p>
+                    <div class="benefits-list">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Industry-recognized certificate</li>
+                            <li>Hands-on experience</li>
+                            <li>Mentorship & guidance</li>
+                            <li>Career advancement</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="internship-card">
+                    <div class="internship-role">🎨 Graphic Designer</div>
+                    <p class="internship-duration">1-3 months</p>
+                    <p>Create visual content, design marketing materials, develop brand identity</p>
+                    <div class="benefits-list">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Portfolio building</li>
+                            <li>Real-world projects</li>
+                            <li>Expert feedback</li>
+                            <li>Global recognition</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="internship-card">
+                    <div class="internship-role">✍️ Content Writer</div>
+                    <p class="internship-duration">1-3 months</p>
+                    <p>Write impactful stories, create engaging content, document impact</p>
+                    <div class="benefits-list">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Writing portfolio</li>
+                            <li>Published work</li>
+                            <li>Industry exposure</li>
+                            <li>Skill development</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="internship-card">
+                    <div class="internship-role">💰 Fundraising Volunteer</div>
+                    <p class="internship-duration">1-3 months</p>
+                    <p>Support fundraising campaigns, donor relations, grant writing</p>
+                    <div class="benefits-list">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Business skills</li>
+                            <li>Networking opportunities</li>
+                            <li>Leadership experience</li>
+                            <li>Resume boost</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="internship-card">
+                    <div class="internship-role">👨‍🏫 Social Work Volunteer</div>
+                    <p class="internship-duration">1-3 months</p>
+                    <p>Community engagement, field work, social impact assessment</p>
+                    <div class="benefits-list">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Social experience</li>
+                            <li>Community connection</li>
+                            <li>Certified training</li>
+                            <li>CSR credentials</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="internship-card">
+                    <div class="internship-role">🚀 Social Entrepreneur</div>
+                    <p class="internship-duration">1-3 months</p>
+                    <p>Develop social enterprises, create sustainable impact models</p>
+                    <div class="benefits-list">
+                        <h4>Benefits:</h4>
+                        <ul>
+                            <li>Entrepreneurial training</li>
+                            <li>Venture support</li>
+                            <li>Pitch opportunities</li>
+                            <li>Funding guidance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="internship-benefits-section">
+                <h3>Why Join InAmigos as Intern/Volunteer?</h3>
+                <div class="benefits-columns">
+                    <div class="benefit-column">
+                        <h4>Industry Recognition</h4>
+                        <p>Certificate from CSR-1 registered, ISO-certified, Central Government-licensed NGO</p>
+                    </div>
+                    <div class="benefit-column">
+                        <h4>Global Acceptance</h4>
+                        <p>Recognized by institutions and organizations worldwide</p>
+                    </div>
+                    <div class="benefit-column">
+                        <h4>Career Growth</h4>
+                        <p>Opens doors for advanced roles in NGOs, CSR projects, and social enterprises</p>
+                    </div>
+                    <div class="benefit-column">
+                        <h4>CSR Advantage</h4>
+                        <p>Experience with reputed NGO gives edge in CSR departments</p>
+                    </div>
+                    <div class="benefit-column">
+                        <h4>Interview Impact</h4>
+                        <p>Strengthens resume and makes you stand out in interviews</p>
+                    </div>
+                    <div class="benefit-column">
+                        <h4>Social Credibility</h4>
+                        <p>Reflects dedication to community service and social responsibility</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section slide-in">
+        <div class="cta-content">
+            <h2>Ready to Make a Difference?</h2>
+            <p>Join InAmigos Foundation in our mission to create lasting positive impact across communities</p>
+            <div class="cta-buttons">
+                <button class="btn btn-light" onclick="handleCTA('volunteer')">Become a Volunteer</button>
+                <button class="btn btn-light" onclick="handleCTA('support')">Support Our Mission</button>
+                <button class="btn btn-light" onclick="handleCTA('partner')">Partner With Us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social & Contact Section -->
+    <section class="social slide-in">
+        <div class="section-container">
+            <h3>Connect With Us</h3>
+            <p>Follow our journey and stay updated on our latest initiatives</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/InAmigos/" target="_blank" class="social-link" title="Facebook">f</a>
+                <a href="https://www.instagram.com/inamigos/" target="_blank" class="social-link" title="Instagram">📷</a>
+                <a href="https://www.linkedin.com/in/inamigos-foundation-1289781b1" target="_blank" class="social-link" title="LinkedIn">in</a>
+                <a href="https://x.com/inamigosf" target="_blank" class="social-link" title="Twitter/X">𝕏</a>
+            </div>
+            <a href="https://www.inamigosfoundation.org.in" target="_blank" class="website-link">Visit Our Website</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 InAmigos Foundation. All rights reserved.</p>
+        <p>Central Government Licensed NGO | Registered under Section 8, Companies Act 2013 | CSR-1 | ISO 9001:2015 Certified</p>
+        <p>Based in Bilaspur, Chhattisgarh | Founded: September 23, 2020</p>
+    </footer>
+
+    <!-- Project Detail Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProjectModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <h3>Impact Highlights:</h3>
+            <ul id="modalImpacts"></ul>
+            <p id="modalCall" style="font-style: italic; margin-top: 1.5rem;"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
