@@ -19,7 +19,7 @@ A responsive NGO website developed for InAmigos Foundation.
 
 ## Live Demo
 
-(Add deployment link here)
+https://aastha-agarwal1385.github.io/InAmigos-Foundation-Website/
 
 ## Project Structure
 
