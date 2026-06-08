@@ -130,8 +130,8 @@ nav a:hover {
 /* Hero Section with Full Height Background */
 .hero {
     background: linear-gradient(
-            rgba(0,0,0,0.45),
-            rgba(0,0,0,0.45)
+            rgba(0,0,0,0.1),
+            rgba(0,0,0,0.1)
         ),
         url("images/hero.png");;
     padding: 5rem 2rem 4rem;
@@ -183,7 +183,7 @@ nav a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.05);
     z-index: 0;
 }
 
@@ -192,6 +192,12 @@ nav a:hover {
     margin: 0 auto;
     position: relative;
     z-index: 1;
+    background: rgba(255,255,255,0.35);
+    backdrop-filter: blur(5px);
+
+    padding: 2rem;
+    border-radius: 20px;
+
 }
 
 .hero h2 {
@@ -204,9 +210,9 @@ nav a:hover {
 
 .hero-subtitle {
     font-size: 1.2rem;
-    color: var(--text-light);
+    color: var(--text-dark);
     margin-bottom: 2.5rem;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.8;
 }
 
